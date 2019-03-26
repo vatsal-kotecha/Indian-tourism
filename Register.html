@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    background-image: url("images/bg1.jpg");
+}
+.footer{
+top:1200px;
+}
+</style>
+</script>
+</head>
+<body>
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  <li><a href="About.html">About</a></li>
+  <li class="dropdown">
+  <a class="dropbtn">Gallery</a>
+  <div class="dropdown-content">
+      <a href="photogallery.html">Photo Gallery</a>
+      <a href="video.html">Video Gallery</a>
+  </div>
+  </li>
+   
+  <li class="dropdown">
+  <a class="dropbtn">Trips Info</a>
+  <div class="dropdown-content">
+      <a href="Shimla.html">Shimla</a>
+      <a href="Rajasthan.html">Rajasthan</a>
+  </div>
+</li>
+<li><a href="Login.html">Login</a></li>
+  <li><a href="Register.html">Register</a></li>
+<li ><form action="welcome.html">
+  
+  <input type="search"  class="search" name="search" placeholder="search"> <i class="fa fa-search" style="right:200px; position: absolute; top:25px;"></i>
+  
+</form>
+
+</li> 
+</ul>
+
+<form action="connection.php" method="post" id="loginForm" name="loginForm">
+
+<div class="center">
+<h2>Enter Name</h2>
+<input type="text" name="Fname" required="required" placeholder="Enter full name" >
+<br>
+<h2>User Name</h2>
+<input type="text" name="Uname" required="required" placeholder="Enter user name" >
+<br>
+<h2>Email id</h2>
+<input type="email" name="Eid" required="required" placeholder="Enter Email id" >
+<br>
+<h2>Password</h2>
+<input type="password" name="Password" required="required" placeholder="Enter Password">
+<br>
+<h2>Confirm Password</h2>
+<input type="password" name="CPassword" required="required" placeholder="ReEnter Password">
+<br>
+<br>
+<input type="submit"  name="Register" value="REGISTER">
+<br>
+</form>
+<br>
+<form action="Login.html">
+<input type="submit" target="Login.html" name="Login" value="LOGIN" onClick="validatePassword();">
+</form>
+</div>
+<div class="footer">
+<footer>
+<center>
+<p>Follow us on</p>
+
+  <button class="icon" > <a class="icon" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href ="http://www.instagram.com" target="_blank"><i class="fa fa-instagram" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube" style="font-size:36px;"></i></a></button>
+
+<p>Created By Vatsal and Aditya &copy;</p>
+</center>  
+</footer>
+</div>
+</body>
+</html>

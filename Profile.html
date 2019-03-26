@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<style>
+video{
+opacity: 0.5;
+
+}
+input[type=text] {
+background-color: rgba(0,0,0,0.1);
+border-color:rgba(0,0,0,0.1);
+
+}
+textarea{
+background-color: rgba(0,0,0,0.1);
+border-color:rgba(0,0,0,0.1);
+}
+input[type=submit] {
+
+background: rgba(0,0,0,0.3);
+border-style:none;
+}
+input[type=submit]:hover {
+
+background: rgba(255,255,255,0.5);
+border-style:none;
+color:black;
+}
+.footer{
+top:1400px;
+background: rgba(0,0,0,0.3);
+}
+ul {
+background: rgba(0,0,0,0.3);
+}
+</style>
+<ul>
+  <li><a href="Home1.html">Home</a></li>
+  <li><a href="Contact1.html">Contact</a></li>
+  <li><a href="About1.html">About</a></li>
+  <li class="dropdown">
+  <a class="dropbtn">Gallery</a>
+  <div class="dropdown-content">
+      <a href="photogallery1.html">Photo Gallery</a>
+      <a href="video1.html">Video Gallery</a>
+  </div>
+  </li>
+  <li><a href="Profile.html" id="lo">Profile</a></li>
+   
+  <li class="dropdown">
+  <a class="dropbtn">Trips Info</a>
+  <div class="dropdown-content">
+      <a href="Shimla1.html">Shimla</a>
+      <a href="Rajasthan1.html">Rajasthan</a>
+  </div>
+</li>
+<li><a href="buy.html">Book</a></li>
+<li><a href="Home.html" id="lo">Logout</a></li>
+<li ><form action="welcome.html">
+  
+  <input type="search"  class="search" name="search" placeholder="search"> <i class="fa fa-search" style="right:200px; position: absolute; top:25px;"></i>
+  
+</form>
+
+</li> 
+</ul>
+<video  id="bgvid" playsinline autoplay muted loop>
+<source src="video/profile.mp4" type="video/mp4">
+</video>
+
+<h1><center>Your Profile</center></h1>
+<center>
+<table>
+<br>
+<tr>
+<th colspan="2"><center><h2>Personal Information</h2></center></th>
+</tr>
+<tr>
+<td><h3>First Name</h1></td>
+<td><input type="text" name="fname" required="required" placeholder="Enter your first name"></td>
+</tr>
+
+<tr>
+<td><h3>Last Name</h1></td>
+<td><input type="text" name="lname" required="required" placeholder="Enter your last name"></td>
+</tr>
+
+<tr>
+<td><h3>Address</h1></td>
+<td>
+<textarea name="address" placeholder="Address" rows="7" cols="35">
+</textarea>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"><center><h2>Contact Information</h2></center></th>
+</tr>
+
+<tr>
+<td><h3>Email</h1></td>
+<td><input type="text" name="email" required="required" placeholder="Enter your Email id"></td>
+</tr>
+
+<tr>
+<td><h3>Phone</h1></td>
+<td><input type="text" name="pno" required="required" placeholder="Enter your Phone no"></td>
+</tr>
+
+<tr>
+<td><h3>Alternate Phone</h1></td>
+<td><input type="text" name="pno1"  placeholder="Enter your Phone no"></td>
+</tr>
+
+<tr>
+<th colspan="2"><center><h2>About Yourself</h2></center></th>
+</tr>
+
+<tr>
+<td><h3>Biographical Info</h1></td>
+<td>
+<textarea name="binfo" placeholder="Something about yourself" rows="7" cols="35">
+</textarea>
+</td>
+</tr>
+
+<tr>
+<td colspan="2"> <center><a href="Home1.html" class="roll-button border" onclick="alert('Your Profile Has Been Updated')"><input type="submit" value="Upload Profile" name="update" ></a></center></td>
+</tr>
+
+
+</table>
+</center>
+<div class="footer">
+<footer>
+<center>
+<p>Follow us on</p>
+
+  <button class="icon" > <a class="icon" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href ="http://www.instagram.com" target="_blank"><i class="fa fa-instagram" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube" style="font-size:36px;"></i></a></button>
+
+<p>Created By Vatsal and Aditya &copy;</p>
+</center>  
+</footer>
+</div>
+</body>
+</html>

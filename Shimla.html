@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shimla</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+<style>
+.footer{
+top:1800px;
+}
+</style>
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  <li><a href="About.html">About</a></li>
+  <li class="dropdown">
+  <a class="dropbtn">Gallery</a>
+  <div class="dropdown-content">
+      <a href="photogallery.html">Photo Gallery</a>
+      <a href="video.html">Video Gallery</a>
+  </div>
+  </li>
+  
+  <li class="dropdown">
+  <a class="dropbtn">Trips Info</a>
+  <div class="dropdown-content">
+      <a href="Shimla.html">Shimla</a>
+      <a href="Rajasthan.html">Rajasthan</a>
+  </div>
+</li>
+<li><a href="Login.html">Login</a></li>
+  <li><a href="Register.html">Register</a></li> 
+<li ><form action="welcome.html">
+  
+  <input type="search"  class="search" name="search" placeholder="search"> <i class="fa fa-search" style="right:200px; position: absolute; top:25px;"></i>
+  
+</form>
+
+</li> 
+</ul>
+<h1 id="h1">Welcome to shimla</h1>
+
+<div class="box">
+<h2 id="h2">Summer Hills</h2>
+  <img src="images/sh.jpg" alt="Avatar" class="image" >
+  <div class="middle">
+    <div class="text">
+    Summer Hill is also called as Potter’s Hill. In the past, this was where potters used to gather clay to make pots.<br>
+    <a id="a" href="SummerHills.html">read more</a></div>
+  </div>
+</div>
+ 
+
+<div class="box1">
+ <h2 id="h2">Annandale</h2>
+  <img src="images/an.jpg" alt="Avatar" class="image" height="100" >
+  <div class="middle">
+    <div class="text">
+	
+Annandale, also referred to as Annadale, is one of the star attractions of Shimla. It is around 4 kms from the Ridge. <br>
+
+    <a id="a" href="Annandale.html">read more</a></div>
+  </div>
+</div>
+ 
+ <div class="box2">
+ 
+ <h2 id="h2">Kufri</h2>
+ 
+  <img src="images/kf.jpg" alt="Avatar" class="image" height="100" >
+  <div class="middle">
+    <div class="text">
+	
+Kufri is located 19 kms away from Shimla. At an altitude of 2510 meters and in the Himalayan foothills, the hill station delights nature lovers and adventurers alike.<br>
+    <a id="a" href="Kufri.html">read more</a></div>
+  </div>
+</div>
+
+ <div class="box3">
+ 
+ <h2 id="h2">Jakhoo Hill</h2>
+
+  <img src="images/jj.jpg" alt="Avatar" class="image" height="100" >
+  <div class="middle">
+    <div class="text">
+	
+Situated 2 km from Shimla, Jakhoo Hill is the highest peak in the entire hill station offers scenic view of the city and snow capped Himalayan Mountains.<br>
+ <a id="a" href="JakhooHills.html">read more</a></div>
+  </div>
+</div>
+
+<div id="map" style="width:100%;height:500px;top:1000px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(31.104800, 77.173400);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 10};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhIbmowZMNQlsMMMXL0LO96rKHAxpdkVQ&callback=myMap"></script>
+
+<div class="footer">
+<footer>
+<center>
+<p>Follow us on</p>
+
+  <button class="icon" > <a class="icon" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href ="http://www.instagram.com" target="_blank"><i class="fa fa-instagram" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube" style="font-size:36px;"></i></a></button>
+
+<p>Created By Vatsal and Aditya &copy;</p>
+</center>  
+</footer>
+</div>
+</body>
+</html>

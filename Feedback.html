@@ -1,0 +1,104 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback</title>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script>
+function validateForm()
+{
+    var a = document.forms["myForm"]["name"].value;
+    if (a == "")
+	{
+        alert("Please enter your name");
+        return false;
+    }
+    var b = document.forms["myForm"]["email"].value;
+    if (b == "")
+	{
+        alert("Please select Mail Id");
+        return false;
+    }
+	var c = document.forms["myForm"]["message"].value;
+    if (c == "")
+	{
+        alert("Please write the ability");
+        return false;
+    }
+}
+</script>
+
+</head>
+<body>
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  <li><a href="About.html">About</a></li>
+  <li class="dropdown">
+  <a class="dropbtn">Gallery</a>
+  <div class="dropdown-content">
+      <a href="photogallery.html">Photo Gallery</a>
+      <a href="video.html">Video Gallery</a>
+  </div>
+  </li>
+  
+  <li class="dropdown">
+  <a class="dropbtn">Trips Info</a>
+  <div class="dropdown-content">
+      <a href="Shimla.html">Shimla</a>
+      <a href="Rajasthan.html">Rajasthan</a>
+  </div>
+</li>
+<li><a href="Login.html">Login</a></li>
+  <li><a href="Register.html">Register</a></li>
+<li ><form action="welcome.html">
+  
+  <input type="search"  class="search" name="search" placeholder="search"> <i class="fa fa-search" style="right:200px; position: absolute; top:25px;"></i>
+  
+</form>
+
+</li> 
+</ul>
+
+<form >
+
+<div class="center"> 
+
+	<div class="row">
+		<h2>Your name:</h2>
+		<input  name="name" type="text" value="" placeholder="Enter name" size="30" ><br>
+	</div>
+	<div class="row">
+		<h2>Your email:</h2>
+		<input  class="input" name="email" type="text" value=""  placeholder="Enter emai-id" size="30" ><br >
+	</div>
+	<div class="row">
+		<h2>Your message:</h2>
+		<textarea class="input" name="message" placeholder="Enter the comment" rows="10" cols="40"></textarea><br >
+	</div>
+	<br>
+	<input name="submit" type="submit" value="Send email" >
+</div>
+</form>
+<div class="footer">
+<footer>
+<center>
+<p>Follow us on</p>
+
+  <button class="icon" > <a class="icon" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href ="http://www.instagram.com" target="_blank"><i class="fa fa-instagram" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube" style="font-size:36px;"></i></a></button>
+
+<p>Created By Vatsal and Aditya &copy;</p>
+</center>  
+</footer>
+</div>
+</body>
+</html>

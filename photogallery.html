@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>Photos</title>
+
+<meta name="viewport" content=" initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body>
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  <li><a href="About.html">About</a></li>
+  <li class="dropdown">
+  <a class="dropbtn">Gallery</a>
+  <div class="dropdown-content">
+      <a href="photogallery.html">Photo Gallery</a>
+      <a href="videogallery.html">Video Gallery</a>
+  </div>
+  </li>
+   
+  <li class="dropdown">
+  <a class="dropbtn">Trips Info</a>
+  <div class="dropdown-content">
+      <a href="Shimla.html">Shimla</a>
+      <a href="Rajasthan.html">Rajasthan</a>
+  </div>
+</li>
+<li><a href="Login.html">Login</a></li>
+  <li><a href="Register.html">Register</a></li>
+<li ><form action="welcome.html">
+  
+  <input type="search"  class="search" name="search" placeholder="search"> <i class="fa fa-search" style="right:200px; position: absolute; top:25px;"></i>
+  
+</form>
+
+</li> 
+</ul>
+<div class="w3-content w3-section" style="position:fixed;top:-20px;width:100%;height:100%; z-index:-5;">
+  <img class="mySlides" src="images/shimla/aa.jpg" style="position:fixed;width:100%;height:100%;">
+  <img class="mySlides" src="images/shimla/bb.jpg" style="position:fixed;width:100%;height:100%;">
+  <img class="mySlides" src="images/shimla/cc.jpg" style="position:fixed;width:100%;height:100%;">
+  <img class="mySlides" src="images/shimla/dd.jpg" style="position:fixed;width:100%;height:100%;">
+</div>
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="table1">
+<br>
+<h1 class="text1"><center>INDIATRAVEL</center></h1>
+<h1 class="text2"><center>THE INDIAN TRAVELLING COMMUNITY</center></h1>
+<br>
+</div>
+<div class="table2">
+<br>
+<center><a class="a1" href="shimlagall.html">Shimla</a></center>
+<center><a class="a1" href="rajasthangall.html">Rajasthan</a></center>
+<center><a class="a1" href="welcome.html" target="_blank">Mumbai</a></center>
+<center><a class="a1" href="welcome.html" target="_blank">Jammu & Kashmir</a></center>
+<center><a class="a1" href="welcome.html" target="_blank">Gujarat</a></center>
+<center><a class="a1" href="welcome.html" target="_blank">Delhi</a></center>
+<center><a class="a1" href="welcome.html" target="_blank">Goa</a></center>
+<br>
+
+
+
+</div>
+</body>
+</html>

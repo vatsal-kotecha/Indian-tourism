@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajasthan</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<style>
+.footer{
+top:1800px;
+}
+</style>
+<ul>
+  <li><a href="Home.html">Home</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  <li><a href="About.html">About</a></li>
+  <li class="dropdown">
+  <a class="dropbtn">Gallery</a>
+  <div class="dropdown-content">
+      <a href="photogallery.html">Photo Gallery</a>
+      <a href="video.html">Video Gallery</a>
+  </div>
+  </li>
+   
+  <li class="dropdown">
+  <a class="dropbtn">Trips Info</a>
+  <div class="dropdown-content">
+      <a href="Shimla.html">Shimla</a>
+      <a href="Rajasthan.html">Rajasthan</a>
+  </div>
+</li>
+<li><a href="Login.html">Login</a></li>
+  <li><a href="Register.html">Register</a></li>
+<li ><form action="welcome.html">
+  
+  <input type="search"  class="search" name="search" placeholder="search"> <i class="fa fa-search" style="right:200px; position: absolute; top:25px;"></i>
+  
+</form>
+
+</li> 
+</ul>
+<h1 id="h1">Welcome To Rajasthan</h1>
+
+<div class="box">
+<h2 id="h2">Gadsisar Lake Jaisalmer </h2>
+<br>
+  <img src="images/gl.jpg" alt="Avatar" class="image" height="100">
+  
+  <div class="middle">
+    <div class="text">
+    Gadsisar Lake was a water conversation tank built in 1400 AD, and was constructed under the reign of Maharwal Gadsi Singh. <br>
+	<a id="a" href="Gadsisar.html">read more</a></div>
+  </div>
+</div>
+ 
+
+<div class="box1">
+ <h2 id="h2">Bharatpur Sanctuary</h2>
+ <br>
+  <img src="images/bs.jpg" alt="Avatar" class="image" height="100" >
+  <div class="middle">
+    <div class="text">
+	
+Spot more than 364 breeds of birds, 379 floral species, 50 species of fish, 13 species of snakes, 5 species of lizards, 7 amphibian species,etc..<br>
+   <a id="a" href="Bharatpur.html">read more</a></div>
+  </div>
+</div>
+ 
+ <div class="box2">
+ <br>
+ <h2 id="h2">Pushkar Lake</h2>
+ <br>
+  <img src="images/pl.jpg" alt="Avatar" class="image" height="100" >
+  <div class="middle">
+    <div class="text">
+	
+Immerse yourself in India's religious heritage and humanitarian culture! Take a tour to Pushkar and witness the important Hindu pilgrimage sites. <br>
+<a id="a" href="PushkarLake.html">read more</a></div>
+  </div>
+</div>
+
+ <div class="box3">
+ <br>
+ <h2 id="h2">Alwar</h2>
+<br>
+  <img src="images/a.jpg" alt="Avatar" class="image" height="100" >
+  <div class="middle">
+    <div class="text">
+	
+Rajasthan's rich Rajput history has left the state replete with exquisite forts, unexplored palaces and miles of barren land. <br>
+.<a id="a" href="Alwar.html">read more</a>  </div>
+</div>
+</div>
+<div id="map" style="width:100%;height:500px;top:1000px"></div>
+
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(26.9124, 75.7873);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 10};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhIbmowZMNQlsMMMXL0LO96rKHAxpdkVQ&callback=myMap"></script>
+
+<div class="footer">
+<footer>
+<center>
+<p>Follow us on</p>
+
+<button class="icon" > <a class="icon" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href ="http://www.instagram.com" target="_blank"><i class="fa fa-instagram" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter" style="font-size:36px;"></i></a></button>
+<button class="icon" ><a class="icon" href="http://www.youtube.com" target="_blank"><i class="fa fa-youtube" style="font-size:36px;"></i></a></button>
+
+<p>Created By Vatsal and Aditya &copy;</p>
+</center>  
+</footer>
+</div>
+</body>
+</html>
