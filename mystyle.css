@@ -1,0 +1,462 @@
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+
+
+#polina {
+    position: absolute;
+    
+    width: 25%;
+    float:left;
+    top:250px;
+    left:200px;
+    margin: 25px;
+}
+
+#polina1 {
+    position: absolute;
+    
+    width: 25%;
+    float:left;
+    top:250px;
+    left:700px;
+    margin: 25px;
+}
+
+#polina2 {
+    position: absolute;
+    
+    width: 25%;
+    float:left;
+    top:250px;
+    left:1200px;
+    margin: 25px;
+}
+
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+@media screen and (max-device-width: 800px) {
+  html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
+
+
+.os{
+position: absolute;
+top:130px;
+text-align:center;
+left:45%;
+
+}
+
+.center {
+    
+    margin: auto;	
+    width: 300px;
+    border: 25px;
+    padding: 25px;
+    
+}
+
+input[type=submit] {
+  background-color: red;
+    border-color: red;
+    border-width:1px;
+    border-radius:7px;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+input[type=submit]:hover{
+background-color: white;
+color:red;
+transition: .5s ease;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+    top: 10px;
+}
+
+li {
+    float: left;
+    
+}
+
+li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: red}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.box {
+    position: absolute;
+    width: 30%;
+    float:left;
+    top:100px;
+    left:100px;
+    margin: 25px;
+}
+
+.box1 {
+    position: absolute;
+    width: 30%;
+    top:100px;
+    right:100px;
+    margin: 25px;
+    float:right;
+}
+.box2 {
+    position: absolute;
+    width: 30%;
+    
+    top:500px;
+    left:100px;
+    margin: 25px;
+}
+
+.box3 {
+    position: absolute;
+    width: 30%;
+    top:500px;
+    right:100px;
+    margin: 25px;
+    float:right;
+}
+
+
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.box:hover .image {
+  opacity: 0.2;
+}
+
+.box:hover .middle {
+  opacity: 1;
+}
+.box1:hover .image {
+  opacity: 0.2;
+}
+.box1:hover .middle {
+  opacity: 1;
+}
+.box2:hover .image {
+  opacity: 0.2;
+}
+.box2:hover .middle {
+  opacity: 1;
+}
+
+.box3:hover .image {
+  opacity: 0.2;
+}
+.box3:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  height: auto;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+#a {
+    color: red;
+}
+
+
+#h1 {
+	text-align: center;
+	text-transform: uppercase;
+    
+}
+
+#h2 {
+	text-align: left;
+	text-transform: uppercase;
+    
+}
+
+
+
+.footer{
+height: 175px;
+width:100%;
+position: absolute;
+background-color: black;
+top:2000px;
+color:white;
+
+}
+
+
+.icon{
+border: 1px;
+background: rgba(0,0,0,0.3);
+color:white;
+
+}
+
+.icon:hover {
+    background-color: #555555;
+    color: white;
+}
+
+p{
+
+font-size: 20px;
+}
+
+.search{
+    
+    border-radius: 4px;
+    position: absolute;
+    padding: 10px 10px 10px 40px;
+    font-size: 10px;
+    right:40px;
+    top:15px;
+}
+
+div.gallery {
+    
+    top:100px;
+    margin: 15px;
+    border: 1px solid #black;
+    float: left;
+    width: 280px;
+}
+
+div.gallery:hover {
+    opacity: 1;
+}
+
+div.gallery. img {
+    width: 100%;
+    height: 100%;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+.table1{
+position: absolute;
+top:170px;
+left:70px;
+background-color: black;
+width: 300px;
+z-index:10;
+color:white;
+}
+
+.table2{
+position: absolute;
+top:320px;
+left:70px;
+background-color: black;
+width: 300px;
+z-index:10;
+color:grey;
+}
+
+
+
+.mySlides {
+display:none;
+z-index:-5;
+}
+
+.a1{
+text-decoration:none;
+font-size:25px;
+color:grey;
+}
+.a1:hover{
+color:white;
+}
+
+.text1{
+font-weight: bold;
+font-size:30px;
+}
+
+.text2{
+font-size:15px;
+color:grey;
+
+}
+
+.outer{
+height: auto;
+width:auto;
+position: absolute;
+top:170px;
+left:440px;
+right:200px;
+background-color: black;
+z-index:1;
+color:white;
+}
+
+.locinfo{
+width:100%;
+height:600px;
+}
+
+.locinfodet{
+background-color:black;
+color:white;
+border: none;
+width:100%;
+text-align: left;
+transition: .5s ease;
+}
+
+.locinfodet:hover{
+background-color: white;
+  color: black;
+transition: .5s ease;
+cursor: pointer;
+}
+
+#myDIV {
+    width: 100%; 
+color:white;
+display: none;
+}
+#myDIV1 {
+display: none;
+    width: 100%; 
+color:white;
+    
+}
+
+.gallery1{
+    
+    float:left;
+    width:300px;
+    margin: 30px;
+}
+
+
+
+.textd {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+transition: .5s ease;
+margin-top: 10px;
+}
+
+.textd:hover {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+transition: .5s ease;
+}
+
+.imagehov{
+
+text-decoration:none;
+text-align: center;
+}
